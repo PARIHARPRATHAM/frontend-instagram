@@ -1,0 +1,31 @@
+.home {
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.feed {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 88px;
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+}
